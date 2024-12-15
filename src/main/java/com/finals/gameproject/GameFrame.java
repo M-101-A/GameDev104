@@ -8,13 +8,11 @@ import javax.swing.*;
 /*
 Class for initiating Frame
 Graphics
-
 */
 
 
 public class GameFrame {
     JFrame frame = new JFrame(); //instantiate frame object
-    
     
     GameFrame() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
@@ -52,6 +50,4 @@ public class GameFrame {
             
         }
     }
-    
-    
 }
