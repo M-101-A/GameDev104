@@ -10,23 +10,19 @@ Class for initiating Frame
 Graphics
 */
 
-
-
-public class GameFrame {
+public class Game {
     JFrame mainFrame = new JFrame(); //instantiate Main Frame
-    
-    
-    
-    GameFrame() {
-        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
-        
+
+    Game() {
+        //Game Design
         GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
         gd.setFullScreenWindow(mainFrame); //FullScreen the FrameSize
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
+        
+        
         
         mainFrame.setLocationRelativeTo(null);
-        
-        
-        
+        mainFrame.setResizable(false);
         mainFrame.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
