@@ -1,5 +1,9 @@
 
 package com.finals.gameproject;
+
+import java.awt.Image;
+import javax.swing.JPanel;
+
 /*
  *
  * @author Jersom R. Felismino
@@ -9,7 +13,9 @@ package com.finals.gameproject;
 
 public class Main {
     public static void main(String[] args) {
-        GameFrame gameFrame = new GameFrame(); //GameFrame Instantiated
-        GameProcess gameProcess = new GameProcess(); //GameProcess Instantiated
+        MainMenu Menu = new MainMenu(); //GameFrame Instantiated (
+        //GameProcess Process = new GameProcess(); //GameProcess Instantiated
     }
+    
+        
 }

@@ -13,30 +13,29 @@ Graphics
 
 
 public class GameFrame {
-    JFrame frame = new JFrame(); //instantiate frame object
+    JFrame mainFrame = new JFrame(); //instantiate Main Frame
+    
+    
     
     GameFrame() {
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
         
         GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-        gd.setFullScreenWindow(frame); //FullScreen the FrameSize
+        gd.setFullScreenWindow(mainFrame); //FullScreen the FrameSize
         
-        frame.setLocationRelativeTo(null);
+        mainFrame.setLocationRelativeTo(null);
         
         
         
-        frame.addKeyListener(new KeyAdapter() {
+        mainFrame.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == java.awt.event.KeyEvent.VK_ESCAPE) {
-                    gd.setFullScreenWindow(null);
                     System.exit(0); // Optional
                 }
             }
         });
-
-        
-        frame.setVisible(true); //always at the bottom
+        mainFrame.setVisible(true); //always at the bottom
     }
     
     
@@ -44,11 +43,4 @@ public class GameFrame {
     
     
     // class for creating the Graphics for the HERO
-    public class MyHero extends JPanel {
-        private Image Hero;
-
-        public MyHero() {
-            
-        }
-    }
 }

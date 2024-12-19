@@ -1,16 +1,22 @@
 
 package com.finals.gameproject;
 
+import java.awt.Image;
+import javax.swing.JPanel;
+
 
 public class GameProcess {
-    
-    GameProcess() {
-        //Class to do processing
-        public moveMent() {
-            //Movement processor
-            return 0;
-        
-        }
+    GameProcess(){
     
     }
+    
+    
+    public class MyHero extends JPanel {
+        Image Hero;
+
+        MyHero() {
+            
+        }
+    }
+    
 }
